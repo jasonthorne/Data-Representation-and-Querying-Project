@@ -9,3 +9,11 @@
 ## Datasite Description
 
 This came from [GMIT] (http://mySite.ie)
+
+
+```c
+int myfunction (int c)
+{
+  return c + c;
+}
+```
