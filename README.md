@@ -40,6 +40,17 @@ Opening_Hours|Station opening hours
 LAT|Station Latitude co-ordinates
 LONG|Station Longitude co-ordinates
  
+ 
+ 
+
+**Example of Data:**
+
+
+Name|Address1|Address2|Address3|Phone|Website|Division|Divisional_HQ|Divisional_HQ_Phone|District|District_HQ|District_HQ_Phone|Opening_Hours|LAT|LONG
+-----------|------------|------------|------------|------------|------------|------------|------------|------------|------------|------------|------------|------------|------------|------------
+Balbriggan Garda Station|Drogheda Road|Balbriggan|Co. Dublin|+353 1 8020510|http://www.garda.ie/Stations/Default.aspx|Dublin Metropolitan Region Northern Division|Ballymun|+353 1 6664493|Balbriggan|Balbriggan|+353 1 8020510|Open 24hrs |53.61437815|-6.191052919
+
+
 
 
 
