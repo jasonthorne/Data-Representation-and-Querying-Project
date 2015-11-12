@@ -43,7 +43,7 @@ LONG|Station Longitude co-ordinates
  
  
 
-**Example of Data:**
+**Example of Data im CSV format:**
 
 
 Name|Address1|Address2|Address3|Phone|Website|Division|Divisional_HQ|Divisional_HQ_Phone|District|District_HQ|District_HQ_Phone|Opening_Hours|LAT|LONG
