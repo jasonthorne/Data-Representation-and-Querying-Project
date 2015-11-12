@@ -17,10 +17,29 @@ This API is designed for the development of mobile apps. To provide Fingal resid
 
 ##Dataset Description##
 
-The data is taken in CSV form from the following [link] (https://data.gov.ie/dataset/garda-stations).
-There are 18 rows of records, each containing 14 columns of data values. The following is an example of a record from this data: 
+The data is recieved inComma Separated Values (CSV) format, from the following [link] (https://data.gov.ie/dataset/garda-stations).
+The CSV file contains 19 rows. The first being the header row with the names of each field.
+There are 14 columns of fields. These are as follows: 
 
 
+Field Name | Data Type | Description 
+-----------|-----------|------------
+Name|String|Name of Garda Station
+Name|String|Name of Garda Station
+Name|String|Name of Garda Station
+Name|String|Name of Garda Station
+Name|String|Name of Garda Station
+Name|String|Name of Garda Station
+Name|String|Name of Garda Station
+ 
+Address 1 - This gives the street address of the Station. This is a String format.
+Address 1 - This gives the street address of the Station. This is a String format.
+Address 1 - This gives the street address of the Station. This is a String format.
+Address 1 - This gives the street address of the Station. This is a String format.
+Address 1 - This gives the street address of the Station. This is a String format.
+Address 1 - This gives the street address of the Station. This is a String format.
+Address 1 - This gives the street address of the Station. This is a String format.
+Address 1 - This gives the street address of the Station. This is a String format.
 
 
 
