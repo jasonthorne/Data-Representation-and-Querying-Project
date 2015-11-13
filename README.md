@@ -53,7 +53,7 @@ Balbriggan Garda Station|Drogheda Road|Balbriggan|Co. Dublin|+353 1 8020510|http
 ##Using the Dataset##
 
 
-This API will return information in JSON format. This is done through using the HTTP Request methods, and the required URL as outlined in the examples below:
+This API will return information in JSON format. This is done through using HTTP Request methods, and the required URL, as outlined in the examples below. 
 
 
 ###Querying by name###
@@ -151,21 +151,26 @@ The response in this case, will be as follows:
 ]
 ```
 
+###Querying by Division###
+
+Stations may be searched for by their Division
+
+
 
 
 
 ###Posting a new record###
 
-To post a record of a new Station, use the following URL:
+To post a record of a new Station, use the following URL, replacing '[name]' with the name of the station:
 
 ```
 http://fingalgarda.ie/stations/new/[name]
 ```
 
-The post request should look like as below, replacing '[value]' with the required data for that field.
+The post request should look like as below, replacing '[value]' with the required data for that field, and '[name]' with name of station.
 
 ```
-POST /stations/new/newStation.html HTTP/1.1
-Host: w3schools.com
+POST /stations/new/[name].html HTTP/1.1
+Host: www.fingalgarda.ie
 Name=[value]&Address1[value]&Address2=[value]&Address3=[value]&Phone=[value]&Website=[value]&Division=[value]&Divisional_HQ=[value]&Divisional_HQ_Phone=[value]&District=[value]&District_HQ=[value]&District_HQ_Phone=[value]&Opening_Hours=[value]&LAT=[value]&LONG=[value]
 ```
