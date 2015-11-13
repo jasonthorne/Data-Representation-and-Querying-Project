@@ -12,7 +12,7 @@
 
 This project outlines the design and documentation for the use of datasets regarding Garda Stations in Fingal.
 These datasets are found at data.gov.ie, at the following [link] (https://data.gov.ie/dataset/garda-stations).
-This API is designed to provide Fingal residents with information on where and how to contact their local garda Station in the event of an emergency. This data can be also be useful for use at other times however. Such as by local Schools wishing to arrange Garda required events.  
+This API is designed to help app developers provide Fingal residents with information on where and how to contact their local garda Station in the event of an emergency. This data can be also be useful for use at other times however. Such as by local Schools wishing to arrange Garda required events.  
 
 
 ##Dataset Description##
@@ -74,7 +74,6 @@ http://www.fingalgarda.ie/stations/name/[Swords Garda Station]
 This would return the following information in JSON format:
 
 ```
-]
  {
     "Name":"Swords Garda Station",
     "Address1":"Main Street",
@@ -92,69 +91,84 @@ This would return the following information in JSON format:
     "LAT":53.4560671353432,
     "LONG":-6.22116473435358
   },
- ]
+  
 ```
 
 
 ###Querying by County###
 
-To search for all Stations within a particular County, use the following URL, where '[Name]' is replaced by the name of the county:
+To search for all Stations within a particular County, use the following URL, where '[name]' is replaced by the name of the county:
 
 ```
 http://www.fingalgarda.ie/stations/county/[name]
 ```
 
-To find Stations within Meath for example, type the following: 
+To find Stations within Co. Dublin for example, type the following: 
 
 ```
-http://www.fingalgarda.ie/stations/county/[Co. Meath]
+http://www.fingalgarda.ie/stations/county/[Co. Dublin]
 ```
 
-The response in this case, will be as follows:
+A list of all Stations within this County will be returned. An example from this is as follows:
 
 ```
-]
- {
-    "Name":"Ashbourne Garda Station",
-    "Address1":"Ashbourne",
-    "Address2":"Co. Meath",
-    "Address3":"",
-    "Phone":"+353 1 8010600",
-    "Website":"http://www.garda.ie/Stations/Default.aspx",
-    "Division":"Meath Division",
-    "Divisional_HQ":"Navan",
-    "Divisional_HQ_Phone":"+353 46 9036300",
-    "District":"Ashbourne",
-    "District_HQ":"Ashbourne",
-    "District_HQ_Phone":"+353 1 8010600",
-    "Opening_Hours":"Open 24hrs ",
-    "LAT":53.5113816620039,
-    "LONG":-6.39698030788465
-  },
+[
   {
-    "Name":"Dunboyne Garda Station",
-    "Address1":"Dunboyne",
-    "Address2":"Co. Meath",
-    "Address3":"",
-    "Phone":"+353 1 8252211",
+    "Name":"Balbriggan Garda Station",
+    "Address1":"Drogheda Road",
+    "Address2":"Balbriggan",
+    "Address3":"Co. Dublin",
+    "Phone":"+353 1 8020510",
     "Website":"http://www.garda.ie/Stations/Default.aspx",
-    "Division":"Meath Division",
-    "Divisional_HQ":"Navan",
-    "Divisional_HQ_Phone":"+353 46 9036300",
-    "District":"Ashbourne",
-    "District_HQ":"Ashbourne",
-    "District_HQ_Phone":"+353 1 8010600",
-    "Opening_Hours":"Closes at 9pm ",
-    "LAT":53.4209513717728,
-    "LONG":-6.47696339790661
- },
+    "Division":"Dublin Metropolitan Region Northern Division",
+    "Divisional_HQ":"Ballymun",
+    "Divisional_HQ_Phone":"+353 1 6664493",
+    "District":"Balbriggan",
+    "District_HQ":"Balbriggan",
+    "District_HQ_Phone":"+353 1 8020510",
+    "Opening_Hours":"Open 24hrs ",
+    "LAT":53.6143781459678,
+    "LONG":-6.19105291877873
+  },
 ]
 ```
 
 ###Querying by Division###
 
-Stations may be searched for by their Division
+Stations may also be searched for through their Division. Replacing '[name]' with the name of the Division.
 
+```
+http://www.fingalgarda.ie/stations/division/[name]
+```
+
+An example of this URL:
+
+```
+http://www.fingalgarda.ie/stations/division/[Kildare Division]
+```
+ 
+The results of this query:
+
+```
+ {
+    "Name":"Leixlip Garda Station",
+    "Address1":"Leixlip",
+    "Address2":"Co. Kildare",
+    "Address3":"",
+    "Phone":"+353 1 6667800",
+    "Website":"http://www.garda.ie/Stations/Default.aspx",
+    "Division":"Kildare Division",
+    "Divisional_HQ":"Naas",
+    "Divisional_HQ_Phone":"+353 45 884311",
+    "District":"Leixlip",
+    "District_HQ":"Leixlip",
+    "District_HQ_Phone":"+353 1 6667800",
+    "Opening_Hours":"Open 24hrs",
+    "LAT":53.3674665276442,
+    "LONG":-6.49833624071316
+  },
+  
+```
 
 
 
