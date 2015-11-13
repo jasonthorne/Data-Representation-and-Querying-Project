@@ -52,14 +52,52 @@ Balbriggan Garda Station|Drogheda Road|Balbriggan|Co. Dublin|+353 1 8020510|http
 
 
 
+##Using the Dataset##
 
 
-This came from [GMIT] (http://mySite.ie)
+This API will return information in JSON format. This is done through using the HTTP Request methods 'GET' and 'POST', and the required URL as outlined in the examples below:
 
 
-```c
-int myfunction (int c)
-{
-  return c + c;
-}
+
+**Searching for Station by name**
+
+
+To retrieve information on a station by it's name, use the GET method at the following URL:
+
 ```
+http://www.fingalgarda.ie/stations/[name]
+```
+
+Where [name] is replaced by the name you wish to search. For example, if you wanted to find Swords Garda station, you would type the following: 
+
+```
+http://www.fingalgarda.ie/stations/[Swords Garda Station]
+```
+
+This would return the following information in JSON format:
+
+```
+]
+ {
+    "Name":"Swords Garda Station",
+    "Address1":"Main Street",
+    "Address2":"Swords",
+    "Address3":"Co. Dublin",
+    "Phone":"+353 1 6664700",
+    "Website":"http://www.garda.ie/Stations/Default.aspx",
+    "Division":"Dublin Metropolitan Region Northern Division",
+    "Divisional_HQ":"Ballymun",
+    "Divisional_HQ_Phone":"+353 1 6664493",
+    "District":"Coolock",
+    "District_HQ":"Coolock",
+    "District_HQ_Phone":"+353 1 6664282",
+    "Opening_Hours":"Open 24hrs ",
+    "LAT":53.4560671353432,
+    "LONG":-6.22116473435358
+  },
+  ]
+```
+
+
+
+
