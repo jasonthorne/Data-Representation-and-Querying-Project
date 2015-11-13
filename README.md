@@ -58,7 +58,7 @@ Balbriggan Garda Station|Drogheda Road|Balbriggan|Co. Dublin|+353 1 8020510|http
 This API will return information in JSON format. This is done through using the HTTP Request methods, and the required URL as outlined in the examples below:
 
 
-**Searching for Station by name**
+###Querying by name###
 
 
 To retrieve information on a station by it's name, use the GET method at the following URL:
@@ -98,18 +98,18 @@ This would return the following information in JSON format:
 ```
 
 
-**Searching for Stations by County**
+###Querying by County###
 
 To search for all Stations within a particular County, use the following URL, where '[Name]' is replaced by the name of the county:
 
 ```
-http://www.fingalgarda.ie/county/name/[name]
+http://www.fingalgarda.ie/stations/county/name/[name]
 ```
 
 To find Stations within Meath for example, type the following: 
 
 ```
-http://www.fingalgarda.ie/county/name/[Co. Meath]
+http://www.fingalgarda.ie/stations/county/name/[Co. Meath]
 ```
 
 The response in this case, will be as follows:
