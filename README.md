@@ -68,7 +68,7 @@ http://www.fingalgarda.ie/stations/name/[name]
 Where '[name]' is replaced by the name you wish to search. For example, if you wanted to find Swords Garda station, you would type the following: 
 
 ```
-http://www.fingalgarda.ie/stations/name/[Swords Garda Station]
+http://www.fingalgarda.ie/stations/name/[Swords&Garda&Station]
 ```
 
 This would return the following information in JSON format:
@@ -106,7 +106,7 @@ http://www.fingalgarda.ie/stations/county/[name]
 To find Stations within Co. Dublin for example, type the following: 
 
 ```
-http://www.fingalgarda.ie/stations/county/[Co. Dublin]
+http://www.fingalgarda.ie/stations/county/[Co.&Dublin]
 ```
 
 A list of all Stations within this County will be returned. An example from this is as follows:
@@ -144,7 +144,7 @@ http://www.fingalgarda.ie/stations/division/[name]
 An example of this URL:
 
 ```
-http://www.fingalgarda.ie/stations/division/[Kildare Division]
+http://www.fingalgarda.ie/stations/division/[Kildare&Division]
 ```
  
 The results of this query:
