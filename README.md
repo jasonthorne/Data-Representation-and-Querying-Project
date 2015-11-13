@@ -12,7 +12,7 @@
 
 This project outlines the design and documentation for the use of datasets regarding Garda Stations in Fingal.
 These datasets are found at data.gov.ie, at the following [link] (https://data.gov.ie/dataset/garda-stations).
-This API is designed to help app developers provide Fingal residents with information on where and how to contact their local garda Station in the event of an emergency. This data can be also be useful for use at other times however. Such as by local Schools wishing to arrange Garda required events.  
+This API is designed to help app developers provide Fingal residents with information on where and how to contact their local garda Station in the event of an emergency. This data can be also be useful in other cases however. Such as by touring event organisers, wishing to contact stations local to their destinations.
 
 
 ##Dataset Description##
@@ -24,19 +24,19 @@ There are 15 columns of fields. These are as follows:
 
 Field Name | Description 
 -----------|------------
-Name|Station Name
-Address1|Station Street Address
-Address2|Station Town Address
-Address3|Station County Address
-Phone|Station Phone Number
-Website|Station Website
-Division|Station Division
-Divisional_HQ|Division HQ
-Divisional_HQ_Phone|Division HQ Phone Number
-District|District
-District_HQ|Dictrct HQ
-District_HQ_Phone|Dictrct HQ Phone Number
-Opening_Hours|Station opening hours
+Name|The name of the Station
+Address1|First address field for the Station
+Address2|Second address field for the Station
+Address3|Third address field for the Station
+Phone|The Station's Phone Number
+Website|The Station's Website
+Division|Station's Division
+Divisional_HQ|The Division's HQ
+Divisional_HQ_Phone|Division HQ's Phone Number
+District|The District te Station is under
+District_HQ|Location of the Dictrct HQ
+District_HQ_Phone|The Dictrct HQ's Phone Number
+Opening_Hours|The Station opening hours
 LAT|Station Latitude co-ordinates
 LONG|Station Longitude co-ordinates
 
@@ -56,7 +56,7 @@ Balbriggan Garda Station|Drogheda Road|Balbriggan|Co. Dublin|+353 1 8020510|http
 This API will return information in JSON format. This is done through using HTTP Request methods, and the required URL, as outlined in the examples below. 
 
 
-###Querying by name###
+###Querying by Name###
 
 
 To retrieve information on a station by it's name, use the GET method at the following URL:
