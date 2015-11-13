@@ -33,7 +33,7 @@ Website|The Station's Website
 Division|Station's Division
 Divisional_HQ|The Division's HQ
 Divisional_HQ_Phone|Division HQ's Phone Number
-District|The District te Station is under
+District|The District the Station is under
 District_HQ|Location of the Dictrct HQ
 District_HQ_Phone|The Dictrct HQ's Phone Number
 Opening_Hours|The Station opening hours
