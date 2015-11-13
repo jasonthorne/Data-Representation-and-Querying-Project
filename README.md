@@ -39,9 +39,7 @@ District_HQ_Phone|Dictrct HQ Phone Number
 Opening_Hours|Station opening hours
 LAT|Station Latitude co-ordinates
 LONG|Station Longitude co-ordinates
- 
- 
- 
+
 
 **Example of Data in CSV format:**
 
@@ -103,13 +101,13 @@ This would return the following information in JSON format:
 To search for all Stations within a particular County, use the following URL, where '[Name]' is replaced by the name of the county:
 
 ```
-http://www.fingalgarda.ie/stations/county/name/[name]
+http://www.fingalgarda.ie/stations/county/[name]
 ```
 
 To find Stations within Meath for example, type the following: 
 
 ```
-http://www.fingalgarda.ie/stations/county/name/[Co. Meath]
+http://www.fingalgarda.ie/stations/county/[Co. Meath]
 ```
 
 The response in this case, will be as follows:
@@ -154,3 +152,20 @@ The response in this case, will be as follows:
 ```
 
 
+
+
+###Posting a new record###
+
+To post a record of a new Station, use the following URL:
+
+```
+http://fingalgarda.ie/stations/new/[name]
+```
+
+The post request should look like as below, replacing '[value]' with the required data for that field.
+
+```
+POST /stations/new/newStation.html HTTP/1.1
+Host: w3schools.com
+Name=[value]&Address1[value]&Address2=[value]&Address3=[value]&Phone=[value]&Website=[value]&Division=[value]&Divisional_HQ=[value]&Divisional_HQ_Phone=[value]&District=[value]&District_HQ=[value]&District_HQ_Phone=[value]&Opening_Hours=[value]&LAT=[value]&LONG=[value]
+```
