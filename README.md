@@ -55,8 +55,7 @@ Balbriggan Garda Station|Drogheda Road|Balbriggan|Co. Dublin|+353 1 8020510|http
 ##Using the Dataset##
 
 
-This API will return information in JSON format. This is done through using the HTTP Request methods 'GET' and 'POST', and the required URL as outlined in the examples below:
-
+This API will return information in JSON format. This is done through using the HTTP Request methods, and the required URL as outlined in the examples below:
 
 
 **Searching for Station by name**
@@ -65,13 +64,13 @@ This API will return information in JSON format. This is done through using the 
 To retrieve information on a station by it's name, use the GET method at the following URL:
 
 ```
-http://www.fingalgarda.ie/stations/[name]
+http://www.fingalgarda.ie/stations/name/[name]
 ```
 
-Where [name] is replaced by the name you wish to search. For example, if you wanted to find Swords Garda station, you would type the following: 
+Where '[name]' is replaced by the name you wish to search. For example, if you wanted to find Swords Garda station, you would type the following: 
 
 ```
-http://www.fingalgarda.ie/stations/[Swords Garda Station]
+http://www.fingalgarda.ie/stations/name/[Swords Garda Station]
 ```
 
 This would return the following information in JSON format:
@@ -95,9 +94,63 @@ This would return the following information in JSON format:
     "LAT":53.4560671353432,
     "LONG":-6.22116473435358
   },
-  ]
+ ]
 ```
 
 
+**Searching for Stations by County**
+
+To search for all Stations within a particular County, use the following URL, where '[Name]' is replaced by the name of the county:
+
+```
+http://www.fingalgarda.ie/county/name/[name]
+```
+
+To find Stations within Meath for example, type the following: 
+
+```
+http://www.fingalgarda.ie/county/name/[Co. Meath]
+```
+
+The response in this case, will be as follows:
+
+```
+]
+ {
+    "Name":"Ashbourne Garda Station",
+    "Address1":"Ashbourne",
+    "Address2":"Co. Meath",
+    "Address3":"",
+    "Phone":"+353 1 8010600",
+    "Website":"http://www.garda.ie/Stations/Default.aspx",
+    "Division":"Meath Division",
+    "Divisional_HQ":"Navan",
+    "Divisional_HQ_Phone":"+353 46 9036300",
+    "District":"Ashbourne",
+    "District_HQ":"Ashbourne",
+    "District_HQ_Phone":"+353 1 8010600",
+    "Opening_Hours":"Open 24hrs ",
+    "LAT":53.5113816620039,
+    "LONG":-6.39698030788465
+  },
+  {
+    "Name":"Dunboyne Garda Station",
+    "Address1":"Dunboyne",
+    "Address2":"Co. Meath",
+    "Address3":"",
+    "Phone":"+353 1 8252211",
+    "Website":"http://www.garda.ie/Stations/Default.aspx",
+    "Division":"Meath Division",
+    "Divisional_HQ":"Navan",
+    "Divisional_HQ_Phone":"+353 46 9036300",
+    "District":"Ashbourne",
+    "District_HQ":"Ashbourne",
+    "District_HQ_Phone":"+353 1 8010600",
+    "Opening_Hours":"Closes at 9pm ",
+    "LAT":53.4209513717728,
+    "LONG":-6.47696339790661
+ },
+]
+```
 
 
