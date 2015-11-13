@@ -17,7 +17,7 @@ This API is designed to help app developers provide Fingal residents with inform
 
 ##Dataset Description##
 
-The data is recieved inComma Separated Values (CSV) format, from the following [link] (https://data.gov.ie/dataset/garda-stations).
+The data is recieved in Comma Separated Values (CSV) format, from the following [link] (https://data.gov.ie/dataset/garda-stations).
 The CSV file contains 19 rows. The first being the header row with the names of each field.
 There are 15 columns of fields. These are as follows: 
 
